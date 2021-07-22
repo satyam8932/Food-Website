@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/* Custom Css Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navbar Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar Logo and Image */
+
+#logo img{
+    height: 85px;
+    width: 85px;
+}
+
+
+/* Navigation Bar List Styling */
+#navbar{
+    position: relative;
+    height: 96px;
+}
+
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 90%;
+    width: 100%;
+    top: 8px;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    opacity: 10;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 2px 27px;
+    box-shadow: rgba(26, 21, 21, 0.479);
+    transition-property: background-color;
+    transition-duration: 350ms;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: rgba(235, 213, 213, 0.144);
+}
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    background: url(bg2.jpg) center center/cover no-repeat;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1{
+    color: white;
+    padding: 12px;
+    font-size: 2.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#home p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 2px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(48, 37, 37, 0.404);
+    width: 200px;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    
+    background: rgba(163, 156, 156, 0.322);
+    transition-duration: 300ms;
+    transition-property: background-color;
+    transform: rotate(360deg);
+    transition: all 900ms ease-in-out;
+}
+
+/* services section */
+
+.box .para{
+    text-align: center;
+}
+
+.services{
+    position: relative;
+    top: 10px;
+
+}
+
+#services{
+    margin: 10px;
+    display: flex;
+}
+
+.hsecond{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 18px;
+    border-radius: 35px;
+    background-color:#f7f6f6;
+}
+
+
+#services .box img{
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+#services .box:hover{
+    background: rgb(243, 189, 107);
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-property: background-color;
+    transform: scale(1.1);
+    transition: all 340ms ease-in-out;
+}
+
+.h-one{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-two{
+    font-size: 2.9rem;
+    margin-top: 30px;
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+
+
+/* client Sections */
+#client{
+    padding: 0px;
+    /* background-color: cyan; */
+}
+
+#client::before{
+    content: "";
+    position: absolute;
+    background: url(bg.jpg);
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img{
+    padding: 60px;
+    height: 65px;
+}
+
+#client-items img{
+    height: 50px;
+    width: 200px;
+}
