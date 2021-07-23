@@ -176,7 +176,7 @@
     transition-duration: 300ms;
     transition-property: background-color;
     transform: scale(1.1);
-    transition: all 340ms ease-in-out;
+    transition: all 190ms ease-in-out;
 }
 
 .h-one{
