@@ -1,5 +1,5 @@
 # Food-Website
-This is a fully responsive food website
+This is a fully responsive food website.
 
 
 To run this Project :
